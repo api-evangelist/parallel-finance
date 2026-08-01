@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://parallel.fi/.well-known/
+host: https://parallel.fi
+notes: >-
+  Probed the standard /.well-known/ discovery surface on the Parallel Finance
+  website host. No discovery documents are published (all 404). The protocol's
+  runtime interface is a Substrate/Polkadot JSON-RPC node (wss://rpc.parallel.fi),
+  not an HTTP REST API, so there is no OpenID/OAuth/api-catalog surface. Empty is
+  an expected, valid result.
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

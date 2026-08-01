@@ -1,8 +1,27 @@
 aid: parallel-finance
 name: Parallel Finance
-description: Parallel Finance is a company surfaced as a portfolio company of lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Parallel Finance is a decentralized money-market protocol built on the Polkadot
+  ecosystem, offering lending, staking, and borrowing where depositors can lend and
+  stake simultaneously to earn combined yield and borrowers can post collateral to
+  borrow. It runs as a Substrate/Polkadot parachain (Parallel mainnet and the Heiko
+  canary network on Kusama). Rather than a REST API, developers integrate through a
+  JSON-RPC node over WebSocket (wss://rpc.parallel.fi) using polkadot.js, aided by
+  Parallel's first-party @parallel-finance TypeScript SDK packages on npm that supply
+  the chain types, RPC definitions, and connection options. Source, chain specs, and
+  the auction toolkit are published under the parallel-finance GitHub organization.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/79623569?v=4
 url: https://raw.githubusercontent.com/api-evangelist/parallel-finance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +31,61 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- DeFi
+- Blockchain
+- Polkadot
+- Lending
+- Staking
+- Money Market
+- Substrate
+- Web3
+- Cryptocurrency
+apis:
+- name: Parallel Finance JSON-RPC (polkadot.js)
+  description: >-
+    Substrate/Polkadot JSON-RPC interface to the Parallel Finance parachain, accessed
+    over WebSocket with the polkadot.js API and Parallel's @parallel-finance/api SDK.
+    Exposes chain state, extrinsics (lending, staking, borrowing, AMM router), and
+    custom RPC methods such as router.getBestRoute.
+  humanURL: https://github.com/parallel-finance/parallel-js
+  baseURL: wss://rpc.parallel.fi
+  tags:
+  - JSON-RPC
+  - WebSocket
+  - Polkadot
+  - DeFi
+  properties:
+  - type: SourceCode
+    url: https://github.com/parallel-finance/parallel-js
+  - type: SDKs
+    url: packages/parallel-finance-packages.yml
+common:
+- type: DomainSecurity
+  url: security/parallel-finance-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/parallel-finance
+- type: SourceCode
+  url: https://github.com/parallel-finance/parallel
+- type: Packages
+  url: packages/parallel-finance-packages.yml
+- type: SDKs
+  url: packages/parallel-finance-packages.yml
+- type: WellKnown
+  url: well-known/parallel-finance-well-known.yml
+- type: LLMsTxt
+  url: llms/parallel-finance-llms.txt
+- type: Twitter
+  url: https://twitter.com/ParallelFi
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

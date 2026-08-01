@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/org/parallel-finance
+notes: >-
+  Official first-party JavaScript/TypeScript client libraries published under the
+  @parallel-finance npm scope, source at github.com/parallel-finance/parallel-js
+  (Apache-2.0). They wrap polkadot.js (@polkadot/api) with Parallel Finance chain
+  types, RPC definitions, and options for connecting to the Parallel and Heiko
+  Substrate/Polkadot parachains. Latest published version 2.0.4 (2024-12-12).
+packages:
+  - language: javascript
+    registry: npm
+    name: "@parallel-finance/api"
+    version: 2.0.4
+    url: https://www.npmjs.com/package/@parallel-finance/api
+    install: npm install @parallel-finance/api
+    repository: https://github.com/parallel-finance/parallel-js
+    license: Apache-2.0
+    description: >-
+      Parallel Finance JS API. Provides polkadot.js ApiPromise options, RPC
+      definitions, WsProvider/HttpProvider, and Keyring for connecting to the
+      Parallel Finance backend node.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@parallel-finance/types"
+    version: 2.0.4
+    url: https://www.npmjs.com/package/@parallel-finance/types
+    install: npm install @parallel-finance/types
+    repository: https://github.com/parallel-finance/parallel-js
+    license: Apache-2.0
+    description: Polkadot.js types for Parallel Finance.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@parallel-finance/type-definitions"
+    version: 2.0.4
+    url: https://www.npmjs.com/package/@parallel-finance/type-definitions
+    install: npm install @parallel-finance/type-definitions
+    repository: https://github.com/parallel-finance/parallel-js
+    license: Apache-2.0
+    description: Polkadot.js type definitions for Parallel Finance.
+    official: true
