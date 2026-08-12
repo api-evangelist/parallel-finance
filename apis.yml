@@ -63,6 +63,9 @@ apis:
   - type: SDKs
     url: packages/parallel-finance-packages.yml
 common:
+- type: License
+  name: Apache-2.0
+  url: https://github.com/parallel-finance/parallel-js/blob/master/LICENSE
 - type: DomainSecurity
   url: security/parallel-finance-domain-security.yml
 - type: GitHubOrganization
