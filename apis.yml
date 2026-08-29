@@ -10,6 +10,18 @@ description: >-
   Parallel's first-party @parallel-finance TypeScript SDK packages on npm that supply
   the chain types, RPC definitions, and connection options. Source, chain specs, and
   the auction toolkit are published under the parallel-finance GitHub organization.
+deliveryModel:
+  model: self-hosted
+  license: Apache-2.0
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -63,6 +75,8 @@ apis:
   - type: SDKs
     url: packages/parallel-finance-packages.yml
 common:
+- type: IssueTracker
+  url: https://github.com/parallel-finance/parallel-js/issues
 - type: License
   name: Apache-2.0
   url: https://github.com/parallel-finance/parallel-js/blob/master/LICENSE
